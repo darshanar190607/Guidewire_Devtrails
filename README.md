@@ -1,6 +1,6 @@
 # PayMigo — AI-Powered Parametric Income Insurance for Food Delivery Workers
 
-**Guidewire DEVTrails 2026 | Team PayMigo | Food Delivery Persona — Zomato / Swiggy**
+**Guidewire DEVTrails 2026 | Team HackDragonz presents(Paymigo) | Food Delivery Persona — Zomato / Swiggy**
 
 Live Demo: [Link to your Vercel deployment]
 Phase 1 Video: [Link to your 2-minute strategy video]
@@ -488,4 +488,4 @@ python app/models/premium_engine/train.py
 
 ---
 
-*Guidewire DEVTrails 2026 — Team PayMigo — Phase 1 Submission, March 20, 2026*
+*Guidewire DEVTrails 2026 — Team HackDragons(PayMigo) — Phase 1 Submission, March 20, 2026*
