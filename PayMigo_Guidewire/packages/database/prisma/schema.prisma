@@ -1,0 +1,41 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Worker {
+  id            String   @id @default(cuid())
+  phone         String   @unique
+  name          String?
+  platform      String
+  zoneId        String
+  riskScore     Float    @default(0.0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  policies      Policy[]
+}
+
+model Policy {
+  id          String   @id @default(cuid())
+  workerId    String
+  worker      Worker   @relation(fields: [workerId], references: [id])
+  premium     Float
+  status      String   @default("ACTIVE")
+  startDate   DateTime @default(now())
+  endDate     DateTime
+  claims      Claim[]
+}
+
+model Claim {
+  id          String   @id @default(cuid())
+  policyId    String
+  policy      Policy   @relation(fields: [policyId], references: [id])
+  amount      Float
+  status      String   @default("PENDING")
+  fraudScore  Float?
+  createdAt   DateTime @default(now())
+}
