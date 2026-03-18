@@ -1,4 +1,4 @@
-# PayMigo — AI-Powered Parametric Income Insurance for Food Delivery Workers
+# PayMigo  AI-Powered Parametric Income Insurance for Food Delivery Workers
 
 **Guidewire DEVTrails 2026 | Team HackDragonz | Food Delivery Persona — Zomato / Swiggy**
 
