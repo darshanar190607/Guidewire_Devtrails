@@ -2,7 +2,7 @@
 
 **Guidewire DEVTrails 2026 | Team HackDragonz | Food Delivery Persona — Zomato / Swiggy**
 
-> **Coverage Scope: INCOME LOSS ONLY** — No health, accident, vehicle, or life coverage.  
+> **Coverage Scope: INCOME LOSS ONLY**  No health, accident, vehicle, or life coverage.  
 > **Pricing Model: WEEKLY only** — Always aligned with gig worker payout cycles.
 
 | Resource | URL |
