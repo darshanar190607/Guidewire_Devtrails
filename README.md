@@ -102,9 +102,9 @@ The platform operates on three technical pillars:
 
 ## 4. Target Persona
 
-**Ravi Kumar — Food Delivery Partner, Mumbai**
+**Gokulnaath— Food Delivery Partner, Mumbai**
 
-Ravi is 24 years old and works primarily for Zomato, with occasional orders on Swiggy. He operates out of Andheri East, a flood-prone zone in Mumbai. He works 8 to 12 hours a day, six days a week, and earns between Rs.5,500 and Rs.7,000 per week under normal conditions. He uses a Redmi 9A (3GB RAM, Android 10), pays through PhonePe, and holds a Jan Dhan bank account. He has no insurance of any kind. Last month he lost Rs.2,100 across six disruption days.
+Gokulnaath is 24 years old and works primarily for Zomato, with occasional orders on Swiggy. He operates out of Andheri East, a flood-prone zone in Mumbai. He works 8 to 12 hours a day, six days a week, and earns between Rs.5,500 and Rs.7,000 per week under normal conditions. He uses a Redmi 9A (3GB RAM, Android 10), pays through PhonePe, and holds a Jan Dhan bank account. He has no insurance of any kind. Last month he lost Rs.2,100 across six disruption days.
 
 **His primary fear:** *"Rain mein kaam nahi hota, lekin EMI banda nahi hoti."*  
 *(Work stops in the rain, but the EMI doesn't.)*
