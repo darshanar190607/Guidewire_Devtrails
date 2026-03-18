@@ -45,9 +45,9 @@
 
 We chose **Food Delivery Partners (Zomato / Swiggy)** over E-commerce (Amazon/Flipkart) or Q-Commerce (Zepto/Blinkit) for three concrete reasons.
 
-**Scale of the problem.** India has over **5.2 million active food delivery partners**, the largest single segment of the gig delivery economy. E-commerce delivery workers number approximately 1.2 million; Q-Commerce workers approximately 0.4 million. Food delivery represents more than 75% of the total addressable gig delivery population — giving PayMigo the widest impact from day one.
+**Scale of the problem.** India has over **5.2 million active food delivery partners**, the largest single segment of the gig delivery economy. E-commerce delivery workers number approximately 1.2 million; Q-Commerce workers approximately 0.4 million. Food delivery represents more than 75% of the total addressable gig delivery population giving PayMigo the best differentiator to choose this persona
 
-**Disruption frequency is highest in food delivery.** Food delivery workers operate across all weather conditions during peak dinner and lunch hours — exactly when disruptions like rain, heat, and AQI spikes are most severe. Unlike E-commerce workers who can reschedule next-day deliveries, a food delivery worker who cannot work during a 3-hour rain event loses those earnings permanently. There is no rescheduling. The income loss is immediate, irreversible, and happens multiple times per monsoon season.
+**Disruption frequency is highest in food delivery.** Food delivery workers operate across all weather conditions during peak dinner and lunch hours  exactly when disruptions like rain, heat, and AQI(Air Quality Index) spikes are most severe. Unlike E-commerce workers who can reschedule next-day deliveries, a food delivery worker who cannot work during a 3-hour rain event loses those earnings permanently. There is no rescheduling. The income loss is immediate, irreversible, and happens multiple times per monsoon season.
 
 **Payment cycle alignment.** Zomato and Swiggy pay their delivery partners weekly every Monday, which maps directly to PayMigo's weekly premium deduction model. This means the worker's premium is deducted on the same day they receive their platform settlement — creating zero cash flow friction. E-commerce platforms pay fortnightly or monthly, which would require us to redesign our auto-renewal architecture entirely.
 
@@ -63,7 +63,7 @@ We chose **Food Delivery Partners (Zomato / Swiggy)** over E-commerce (Amazon/Fl
 
 ## 2. The Problem
 
-India has over 5 million active food delivery partners working on platforms like Zomato and Swiggy. These workers earn between Rs.3,500 and Rs.7,000 per week entirely through completed deliveries. There is no fixed salary. When an external disruption occurs — heavy rain, severe air pollution, a city-wide curfew, or a platform outage their income drops to zero immediately, yet their fixed costs continue without pause.
+India has over 5 million active food delivery partners working on platforms like Zomato and Swiggy. These workers earn between Rs.3,500 and Rs.7,000 per week entirely through completed deliveries. There is no fixed salary. When an external disruption occurs heavy rain, severe air pollution, a city-wide curfew, or a platform outage their income drops to zero immediately, yet their fixed costs continue without pause.
 
 **A real disruption week:**
 
@@ -177,7 +177,7 @@ W002, 2, 2, 0.21, 65, 8, 0, 2.1, 0, 0.05, 78
 W003, 5, 8, 0.91, 320, 36, 0, 11.4, 2, 0.61, 221
 ```
 
-Synthetic training data (5,000 rows) generated using historical IMD rainfall data (2020–2024), CPCB AQI zone data, and simulated worker profiles. See `apps/ml-service/data/` for full datasets.
+Synthetic training data (5,000 rows) generated using historical IMD rainfall data (2020–2024), CPCB AQI (Central Pollution Control Board)zone data, and simulated worker profiles. See `apps/ml-service/data/` for full datasets. 
 
 ---
 
