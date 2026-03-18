@@ -41,7 +41,7 @@
 
 ---
 
-## 1. Why Food Delivery — Persona Justification
+## 1. Why Food Delivery  Persona Justification
 
 We chose **Food Delivery Partners (Zomato / Swiggy)** over E-commerce (Amazon/Flipkart) or Q-Commerce (Zepto/Blinkit) for three concrete reasons.
 
@@ -63,7 +63,7 @@ We chose **Food Delivery Partners (Zomato / Swiggy)** over E-commerce (Amazon/Fl
 
 ## 2. The Problem
 
-India has over 5 million active food delivery partners working on platforms like Zomato and Swiggy. These workers earn between Rs.3,500 and Rs.7,000 per week entirely through completed deliveries. There is no fixed salary. When an external disruption occurs — heavy rain, severe air pollution, a city-wide curfew, or a platform outage — their income drops to zero immediately, yet their fixed costs continue without pause.
+India has over 5 million active food delivery partners working on platforms like Zomato and Swiggy. These workers earn between Rs.3,500 and Rs.7,000 per week entirely through completed deliveries. There is no fixed salary. When an external disruption occurs — heavy rain, severe air pollution, a city-wide curfew, or a platform outage their income drops to zero immediately, yet their fixed costs continue without pause.
 
 **A real disruption week:**
 
@@ -92,11 +92,11 @@ PayMigo is a parametric income insurance platform built **exclusively for food d
 
 The platform operates on three technical pillars:
 
-1. **Parametric Trigger Engine** — Polls weather, AQI, government alert, and platform APIs every 5 to 15 minutes. When a pre-defined, objectively measurable threshold is breached in a worker's active zone, the system initiates a claim without any human action.
+1. **Parametric Trigger Engine**  Polls weather, AQI, government alert, and platform APIs every 5 to 15 minutes. When a pre-defined, objectively measurable threshold is breached in a worker's active zone, the system initiates a claim without any human action.
 
-2. **AI-Powered Dynamic Pricing Engine (XGBoost)** — Calculates each worker's weekly premium every Monday using 9 hyper-local risk features. Premiums range from Rs.69 to Rs.229/week, always structured weekly to match the gig worker's settlement cycle.
+2. **AI-Powered Dynamic Pricing Engine (XGBoost)** Calculates each worker's weekly premium every Monday using 9 hyper-local risk features. Premiums range from Rs.69 to Rs.229/week, always structured weekly to match the gig worker's settlement cycle.
 
-3. **Multi-Layer Fraud Detection** — Isolation Forest anomaly detection + Random Forest GPS movement classifier + community peer validation. Ensures only genuine income loss events trigger payouts.
+3. **Multi-Layer Fraud Detection**  Isolation Forest anomaly detection + Random Forest GPS movement classifier + community peer validation. Ensures only genuine income loss events trigger payouts.
 
 ---
 
@@ -125,7 +125,7 @@ PayMigo uses a **weekly premium structure** because Zomato and Swiggy pay their 
 | Standard | Rs.109/week | Rs.159/week | Rs.550 | Rs.1,650 | All 5 triggers |
 | Premium | Rs.179/week | Rs.229/week | Rs.850 | Rs.2,550 | All 5 + Platform Outage |
 
-> **Pricing rationale for high returns:** The floor has been set at Rs.69 (not Rs.49) and ceiling at Rs.229 based on a target loss ratio of 55–65%. At Rs.69/week Basic in a low-risk zone, with a weekly payout cap of Rs.1,050 and average disruption frequency of 1.8 events per month, the expected loss ratio sits at approximately 58% — leaving 42% to cover operations and profit. For high-risk zones at Rs.229/week, the higher frequency of events is offset by the higher premium, maintaining the same 55–65% loss ratio band.
+> **Pricing rationale for high returns:** The floor has been set at Rs.69 (not Rs.49) and ceiling at Rs.229 based on a target loss ratio of 55–65%. At Rs.69/week Basic in a low-risk zone, with a weekly payout cap of Rs.1,050 and average disruption frequency of 1.8 events per month, the expected loss ratio sits at approximately 58% , leaving 42% to cover operations and profit. For high-risk zones at Rs.229/week, the higher frequency of events is offset by the higher premium, maintaining the same 55–65% loss ratio band.
 
 ### 5.2 XGBoost Dynamic Premium Calculator
 
@@ -235,7 +235,7 @@ Loyalty bonus is **capped at Rs.500 per event** to protect insurer solvency.
 
 ---
 
-## 7. Parametric Triggers — Threshold Justification
+## 7. Parametric Triggers  Threshold Justification
 
 PayMigo monitors **five external events** that directly cause income loss. Each threshold is anchored to an official Indian government classification — not an arbitrary number.
 
@@ -316,9 +316,9 @@ This is a real operational risk we have designed for explicitly. Our fallback is
 
 **Tier 3 — Community Photo Validation (60+ minutes or total API failure):** This is our most innovative fallback. When all external APIs for a given trigger are unavailable:
 
-1. The system detects API failure and sends a push notification to all active workers in the affected zone: *"APIs unavailable. Help us verify the disruption — submit a photo of current conditions."*
+1. The system detects API failure and sends a push notification to all active workers in the affected zone: *"APIs unavailable. Help us verify the disruption  submit a photo of current conditions."*
 2. Workers submit a photo through their dashboard (geotagged + timestamped automatically).
-3. Our image classifier (MobileNetV3, lightweight enough for FastAPI on Render free tier) validates that the photo shows rainfall / flooding / haze / empty streets — not a normal day.
+3. Our image classifier (MobileNetV3, lightweight enough for FastAPI on Render free tier) validates that the photo shows rainfall / flooding / haze / empty streets  not a normal day.
 4. If **7 out of 10** workers in a zone submit matching disruption photos within 30 minutes, the trigger fires at **70% payout** (reduced from normal because confidence is lower without API data).
 5. The case is flagged for post-event manual review with all photos stored in MongoDB Atlas.
 
@@ -776,21 +776,4 @@ curl -X POST http://localhost:8000/trigger/classify \
 
 ---
 
-## 19. Team
-
-| Name | Role |
-|---|---|
-| Name 1 | Full Stack Lead — Next.js, API Routes, Auth |
-| Name 2 | ML Engineer — XGBoost, LSTM, Fraud Models |
-| Name 3 | Frontend & UI/UX — PWA, Dashboards, i18n |
-| Name 4 | Backend & DevOps — FastAPI, Docker, Supabase |
-
----
-
 *Guidewire DEVTrails 2026 — Team HackDragonz (PayMigo) — Phase 1 Submission, March 20, 2026*
-
-> **Golden Rules Compliance Check:**  
-> ✅ Single persona: Food Delivery — Zomato / Swiggy  
-> ✅ Weekly pricing only: Rs.69 to Rs.229 per week  
-> ✅ Coverage: Income Loss ONLY — no health, accident, vehicle, or life coverage  
-> ✅ All features: Parametric triggers, automated payouts, fraud detection, both dashboards
