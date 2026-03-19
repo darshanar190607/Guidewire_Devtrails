@@ -7,9 +7,9 @@
 
 | Resource | URL |
 |---|---|
-| GitHub Repository | [Add your GitHub link here] |
-| Phase 1 Strategy Video | [Add your 2-minute video link here — MANDATORY] |
-| Phase 2 Demo Video | [Added April 4] |
+| GitHub Repository |https://github.com/darshanar190607/Guidewire_Devtrails.git|
+| Phase 1 Strategy Video |https://youtu.be/CJcxim5aT-E |
+| Phase 2 Demo Video |https://youtu.be/CJcxim5aT-E|
 | Phase 3 Final Video | [Added April 17] |
 | Live Deployment | [Add your Vercel link here] |
 | ML Service API Docs | [Add your Render link here]/docs |
@@ -107,7 +107,7 @@ The platform operates on three technical pillars:
 
 Gokulnaath is 24 years old and works primarily for Zomato, with occasional orders on Swiggy. He operates out of Andheri East, a flood-prone zone in Mumbai. He works 8 to 12 hours a day, six days a week, and earns between Rs.5,500 and Rs.7,000 per week under normal conditions. He uses a Redmi 9A (3GB RAM, Android 10), pays through PhonePe, and holds a Jan Dhan bank account. He has no insurance of any kind. Last month he lost Rs.2,100 across six disruption days.
 
-**His primary fear:** *"Rain mein kaam nahi hota, lekin EMI banda nahi hoti."*  
+**His primary fear:** *"Work doesn’t happen in the rain, but the EMI never stops"*  
 *(Work stops in the rain, but the EMI doesn't.)*
 
 **Device constraints we design for:** 3GB RAM Android, 2G/3G connectivity, Hindi primary language. This is why PayMigo is a PWA (no Play Store required), loads under 200KB on first render, and supports offline policy viewing.
@@ -218,7 +218,7 @@ Receive the standard parametric payout at their current tier percentage. Loyalty
 
 If a worker **misses a weekly payment** (policy lapses for 1 week):
 - Their loyalty tier drops by one level (e.g., Month 5 → Month 4 tier)
-- If they miss 2 consecutive weeks, they restart at Month 1 (40%)
+- If they miss 2 consecutive weeks, they restart at Month 1 (10%)
 - This prevents workers from gaming the system by pausing during low-risk months
 
 ### 6.4 Loyalty Pool Bonus
@@ -687,7 +687,7 @@ During this 15-minute window:
 
 **If passive enrichment resolves suspicion → auto-approve. Worker felt nothing.**
 - Time to payout: 15–25 minutes
-- Worker sees: "Your claim is being processed 🔄" (no mention of flag)
+- Worker sees: "Your claim is being processed " (no mention of flag)
 
 ---
 
@@ -1133,7 +1133,7 @@ The product can be launched under the **IRDAI Innovation Sandbox framework (2023
 - K-Means zone clustering model v1 — trained on synthetic data, exported to `kmeans_zones.pkl`
 - Synthetic training dataset generation (5,000 workers, `synthetic_workers.csv`)
 - Docker Compose environment working locally (PostgreSQL + Redis + FastAPI)
-- 2-minute strategy video (uploaded before March 20 EOD)
+- 2-minute strategy video 
 
 ### Phase 2 — March 21 to April 4: Automation & Protection
 
