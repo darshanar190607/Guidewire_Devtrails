@@ -9,7 +9,7 @@
 |---|---|
 | GitHub Repository |https://github.com/darshanar190607/Guidewire_Devtrails.git|
 | Phase 1 Strategy Video |https://youtu.be/CJcxim5aT-E |
-| Phase 2 Demo Video |https://youtu.be/CJcxim5aT-E|
+| Phase 2 Demo Video |Coming Soon|
 | Phase 3 Final Video | [Added April 17] |
 | Live Deployment | [Add your Vercel link here] |
 | ML Service API Docs | [Add your Render link here]/docs |
