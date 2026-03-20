@@ -38,7 +38,7 @@
 17. [Business Viability & Go-To-Market Strategy](#16-business-viability--go-to-market-strategy)
 18. [Six-Week Delivery Plan](#17-six-week-delivery-plan)
 19. [Running Locally](#18-running-locally)
-20. [Team](#19-team)
+
 
 ---
 
@@ -61,7 +61,50 @@ We chose **Food Delivery Partners (Zomato / Swiggy)** over E-commerce (Amazon/Fl
 - **Progressive payout model:** Workers only receive partial salary replacement (40% to 80% depending on their loyalty tier), not full salary replacement. This is explicitly not full indemnity insurance — it is parametric income protection. This is the key design choice that keeps the product solvent.
 
 ---
+## 💡 Our Strategy Pillars
 
+---
+
+### 1. Three Weekly Plans — With Smart Surge Pricing
+
+We offer three simple plans. On normal days, you pay the base price.
+On risky disruption periods, the price adjusts slightly to cover higher payout risk.
+
+| Plan | Normal Week | Disruption Week | Base Payout/Event |
+|---|---|---|---|
+| 🟤 Basic Shield | ₹69/week | ₹89/week | ₹600 |
+| 🔵 Standard Shield | ₹119/week | ₹149/week | ₹1,000 |
+| 💎 Premium Shield | ₹179/week | ₹225/week | ₹1,600 |
+
+> **Key Rule:** Existing subscribers are **ALWAYS locked at their current rate**.
+> Surge pricing only applies to new sign-ups during a disruption period.
+> This builds trust — we never charge you more mid-week.
+
+---
+
+### 2. 🔥 Progressive Loyalty Multiplier (Streak Engine)
+
+The longer you pay without interruption, the **MORE** you get paid when disruption hits.
+
+| Streak | Weeks Paid | Multiplier | Payout Example (₹700 loss) |
+|---|---|---|---|
+| 🟤 Starter | Week 1–3 | 1.0x | ₹700 |
+| 🔵 Bronze | Week 4–7 | 1.25x | ₹875 |
+| ⚪ Silver | Week 8–11 | 1.6x | ₹1,120 |
+| 🟡 Gold | Week 12–15 | 2.2x | ₹1,540 |
+| 🟠 Platinum | Week 16–19 | 3.0x | ₹2,100 |
+| 💎 Diamond | Week 20+ | 4.0x | ₹2,800 |
+
+**Why this works:**
+- Riders are rewarded for loyalty — the longer you stay, the more protected you are
+- Insurers stay safe — high multipliers happen only when disruption frequency is historically low
+- Streak resets on missed payment or fraud detection
+
+**Streak Protection Features:**
+- 🧊 **Streak Freeze** — Pay ₹15 to pause streak for up to 2 weeks (vacation/break)
+- 🚑 **Streak Rescue** — Pay double premium within 48 hrs to restore a broken streak
+- 🎁 **Milestone Cashbacks** — ₹20 at Week 4 → ₹500 at Week 52, credited directly to UPI
+- 
 ## 2. The Problem
 
 India has over 5 million active food delivery partners working on platforms like Zomato and Swiggy. These workers earn between Rs.3,500 and Rs.7,000 per week entirely through completed deliveries. There is no fixed salary. When an external disruption occurs heavy rain, severe air pollution, a city-wide curfew, or a platform outage their income drops to zero immediately, yet their fixed costs continue without pause.
