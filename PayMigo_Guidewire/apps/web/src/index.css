@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-body antialiased;
+    background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.02) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+  input, select, textarea {
+    @apply bg-white border border-border rounded-xl py-3 px-4 transition-all duration-200;
+  }
+  input:focus, select:focus, textarea:focus {
+    @apply outline-none ring-2 ring-accent/20 border-accent shadow-lg shadow-accent/5;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-secondary) 100%);
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-xl border border-border/50 rounded-2xl shadow-xl;
+}
+
+.glow-accent {
+  box-shadow: 0 10px 30px rgba(255, 77, 0, 0.15);
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 77, 0, 0.05) 0%, transparent 70%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
