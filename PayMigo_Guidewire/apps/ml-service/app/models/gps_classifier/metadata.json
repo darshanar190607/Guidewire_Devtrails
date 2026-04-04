@@ -1,0 +1,6 @@
+{
+  "model": "RandomForestClassifier",
+  "features": ["latitude", "longitude", "speed", "hour", "zone_id"],
+  "target": "gps_anomaly",
+  "trained": false
+}

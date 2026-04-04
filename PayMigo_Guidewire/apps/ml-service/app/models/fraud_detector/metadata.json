@@ -1,0 +1,5 @@
+{
+  "model": "IsolationForest",
+  "features": ["claim_amount", "zone_risk", "days_since_policy", "incident_count"],
+  "trained": false
+}

@@ -1,0 +1,7 @@
+{
+  "model": "TF-IDF + LogisticRegression",
+  "features": ["headline"],
+  "target": "curfew_risk",
+  "vocab_size": 5000,
+  "trained": false
+}
