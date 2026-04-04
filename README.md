@@ -11,7 +11,7 @@
 | Phase 1 Strategy Video |https://youtu.be/CJcxim5aT-E |
 | Phase 2 Demo Video |https://youtu.be/VeZXEUuPCfs|
 | Phase 3 Final Video | [Added April 17] |
-| Live Deployment | [Add your Vercel link here] |
+| Live Deployment | pay-migo-frontend-8pow-34gj3nqev.vercel.app |
 | ML Service API Docs | [Add your Render link here]/docs |
 | Figma Wireframes | [Add your Figma link here] |
 
